@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace PierresTreats.Models
+namespace PTreats.Models
 {
   public class Flavor
   {

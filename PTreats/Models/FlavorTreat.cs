@@ -1,4 +1,4 @@
-namespace PierresTreats.Models
+namespace PTreats.Models
 {
   public class FlavorTreat
     {       
