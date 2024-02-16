@@ -1,0 +1,25 @@
+@{
+  Layout = "_Layout";
+}
+
+@using PTreats.Models;
+
+<h1>Treats for @User.Identity.Name</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>Treat yourself to some new menu items</h3>
+} 
+else
+{
+  <ul>
+    @foreach (Treat treat in Model)
+    {
+      <li>@Html.ActionLink($"{treat.Description}", "Details", new { id = treat.TreatId })</li>
+    }
+  </ul>
+}
+
+<p>@Html.ActionLink("Add new treat", "Create")</p>
+<p>@Html.ActionLink("See Flavor List", "Index", "Flavors")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
