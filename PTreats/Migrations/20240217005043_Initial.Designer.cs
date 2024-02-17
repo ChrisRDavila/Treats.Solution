@@ -11,8 +11,8 @@ using PTreats.Models;
 namespace PTreats.Migrations
 {
     [DbContext(typeof(PTreatsContext))]
-    [Migration("20240216210916_Initital")]
-    partial class Initital
+    [Migration("20240217005043_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

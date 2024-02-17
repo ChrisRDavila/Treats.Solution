@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PTreats.Models;
 using Microsoft.AspNetCore.Identity;
 
+
 namespace PTreats
 {
   class Program
@@ -34,6 +35,9 @@ namespace PTreats
       app.UseStaticFiles();
 
       app.UseRouting();
+
+      app.UseAuthentication(); 
+      app.UseAuthorization();
 
       app.MapControllerRoute(
           name: "default",
