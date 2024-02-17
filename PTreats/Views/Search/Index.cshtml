@@ -1,0 +1,35 @@
+@{
+  Layout = "_Layout";
+}
+
+@using PTreats.Models;
+<h2>@ViewBag.PageTitle</h2>
+
+@if (@Model.Count == 0)
+{
+  <p>Your search returned no results. Please try again.</p>
+}
+else if (@ViewBag.SearchType == "treats")
+{
+  <div>
+  @foreach (Treat treat in Model)
+  {
+    <div>@Html.ActionLink(treat.Description, "Details", "Treats", new { id = treat.TreatId })</div>
+  }
+  </div>
+}
+else
+{
+  <div>
+  @foreach (Flavor flavor in Model)
+  {
+    <div>@Html.ActionLink(flavor.Type, "Details", "Flavors", new { id = flavor.FlavorId })</div>
+  }
+  </div>
+}
+<div>
+  <br /><br />
+  <button>@Html.ActionLink("Add a Treat", "Create", "Treats")</button>
+  <button>@Html.ActionLink("Add a Flavor", "Create", "Flavors")</button>
+  <button>@Html.ActionLink("Home", "Index", "Home")</button>
+</div>
