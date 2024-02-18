@@ -10,9 +10,9 @@ div#footer {
 
 .card {
   font-family: "Josefin Sans", sans-serif;
-  color:aliceblue;
+  color: black;
 	-webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color:aquamarine;
+  -webkit-text-stroke-color:beige;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 20px;
@@ -43,5 +43,20 @@ div#footer {
 	width: 80%;
 	border-radius: 20px;
 	border: 2px;
-	border-color: aqua;
+	border-width: 2px;
+	border-color:chocolate;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+}
+
+a {
+	text-decoration: none;
+	color:darkseagreen;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:darkcyan;
+	size: 120%;
+	text-align: center;
+}
+
+a :hover {
+	color: black;
 }
