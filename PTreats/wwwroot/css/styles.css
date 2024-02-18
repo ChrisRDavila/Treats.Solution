@@ -13,7 +13,7 @@ div#footer {
   color: black;
 	-webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:beige;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 aquamarine;
   transition: 0.3s;
   border-radius: 20px;
   background-color: rgb(203, 235, 218);
@@ -45,7 +45,7 @@ div#footer {
 	border: 2px;
 	border-width: 2px;
 	border-color:chocolate;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+	box-shadow: 0 4px 8px 0 aquamarine;
 }
 
 a {
